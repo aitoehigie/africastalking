@@ -273,8 +273,10 @@ class AfricasTalkingGateway:
             headers = {'Accept' : 'application/json',
                        'apikey' : self.apiKey}
             if data_ is not None:
-                data    = urllib.urlencode(data_)
-                request = urllib2.Request(urlString, data, headers = headers)
+                payload = dict(data=data_)
+                #data    = urllib.urlencode(data_)
+                #request = urllib2.Request(urlString, data, headers = headers)
+                result = requests.get(urlString, params=payload, headers=headers)
             else:
                 request = urllib2.Request(urlString, headers = headers)
             response = urllib2.urlopen(request)
