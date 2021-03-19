@@ -19,7 +19,7 @@ Flask==0.12.2
 httptools==0.0.9
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 multidict==3.3.2
 requests==2.18.4
