@@ -23,7 +23,7 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 multidict==3.3.2
 requests==2.18.4
-sanic==0.6.0
+sanic==20.12.6
 ujson==1.35
 urllib3==1.22
 uvloop==0.8.1
